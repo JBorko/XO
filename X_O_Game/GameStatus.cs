@@ -2,6 +2,8 @@
 {
     public enum GameStatus
     {
-        NEW_GAME
+        NEW_GAME,
+        RESETED,
+        IN_PROGRESS
     }
 }

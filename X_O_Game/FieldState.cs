@@ -2,6 +2,8 @@
 {
     public enum FieldState
     {
-        EMPTY
+        EMPTY,
+        X,
+        O
     }
 }

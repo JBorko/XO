@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:X_O_Game"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" SizeToContent="WidthAndHeight">
+    <Grid Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Name="lblP1" FontSize="25" Grid.Column="0" Grid.Row="0">Player 1: </Label>
+        <Label Name="lblP2" FontSize="25" Grid.Column="4" Grid.Row="0">Player 2: 0</Label>
+        <Button Name="btn_00" Grid.Column="1" Grid.Row="1" Click="Button_Click"></Button>
+        <Button Name="btn_01" Grid.Column="1" Grid.Row="2" Click="Button_Click"></Button>
+        <Button Name="btn_02" Grid.Column="1" Grid.Row="3" Click="Button_Click"></Button>
+        <Button Name="btn_10" Grid.Column="2" Grid.Row="1" Click="Button_Click"></Button>
+        <Button Name="btn_11" Grid.Column="2" Grid.Row="2" Click="Button_Click"></Button>
+        <Button Name="btn_12" Grid.Column="2" Grid.Row="3" Click="Button_Click"></Button>
+        <Button Name="btn_20" Grid.Column="3" Grid.Row="1" Click="Button_Click"></Button>
+        <Button Name="btn_21" Grid.Column="3" Grid.Row="2" Click="Button_Click"></Button>
+        <Button Name="btn_22" Grid.Column="3" Grid.Row="3" Click="Button_Click"></Button>
     </Grid>
 </Window>

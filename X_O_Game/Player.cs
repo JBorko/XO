@@ -1,4 +1,4 @@
-﻿namespace UnitTestProject
+﻿namespace X_O_Game
 {
     public class Player
     {
